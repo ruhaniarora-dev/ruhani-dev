@@ -1,16 +1,21 @@
+
 const Footer = () => {
   return (
-    <footer className='bg-gray-500 flex scroll-mt-24' id="contact">
-      <div className='text-white px-30 py-15'>
+    <footer
+      className="flex flex-col gap-8 bg-gray-500 px-5 py-10 scroll-mt-24 sm:px-8 sm:py-12 md:px-12 lg:flex-row lg:items-center lg:justify-between lg:px-20 lg:py-15"
+      id="contact"
+    >
+      <div className="text-white">
+        <h1 className="mt-3 font-serif text-2xl leading-snug sm:text-3xl">
+          Have something to build?
+        </h1>
 
-        <h1 className="font-serif mt-3 text-2xl md:text-3xl leading-snug">
-          Have something to build?            </h1>
-        <p className="mt-2 max-w-lg ">
+        <p className="mt-2 max-w-lg text-sm sm:text-base">
           I'm always open to new opportunities, collaborations, and interesting projects.
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-5 mt-9">
+      <div className="mt-2 flex flex-wrap gap-6 sm:gap-8 lg:mt-9">
         {/* <a
           href="/projects"
           className="flex h-fit items-center gap-2 rounded-full bg-white px-4 py-2
@@ -20,8 +25,12 @@ const Footer = () => {
           View My Work
           <span>→</span>
         </a> */}
-        <div className="flex flex-wrap gap-8 text-white">
-          <a href="mailto:reachruhania@gmail.com" className="lg:border-l lg:border-gray-400 lg:pl-8">
+
+        <div className="flex flex-wrap gap-6 text-white sm:gap-8">
+          <a
+            href="mailto:reachruhania@gmail.com"
+            className="min-w-0 break-words lg:border-l lg:border-gray-400 lg:pl-8"
+          >
             <svg
               className="h-5 w-5"
               viewBox="0 0 24 24"
@@ -32,21 +41,27 @@ const Footer = () => {
               <rect x="3" y="5" width="18" height="14" rx="2" />
               <path d="m3 7 9 6 9-6" />
             </svg>
+
             <p className="mt-2 text-sm">Email</p>
-            <p className="text-m hover:underline">reachruhania@gmail.com</p>
+            <p className="break-all text-sm hover:underline sm:text-base">
+              reachruhania@gmail.com
+            </p>
           </a>
 
           <a
             href="https://www.linkedin.com/in/ruhani-dev/"
             target="_blank"
-            className="lg:border-l lg:border-gray-400 lg:pl-8"
+            rel="noopener noreferrer"
+            className="min-w-0 break-words lg:border-l lg:border-gray-400 lg:pl-8"
           >
             <span className="text-xl font-bold leading-none">in</span>
+
             <p className="mt-2 text-sm">LinkedIn</p>
-            <p className="text-m hover:underline">linkedin.com/in/ruhani-dev</p>
+            <p className="break-all text-sm hover:underline sm:text-base">
+              linkedin.com/in/ruhani-dev
+            </p>
           </a>
         </div>
-
       </div>
     </footer>
   )

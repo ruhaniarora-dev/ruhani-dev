@@ -16,7 +16,6 @@ const App = () => {
 
   const { pathname } = useLocation();
 
-
   useEffect(() => {
     const id = pathname === "/" ? "home" : pathname.slice(1);
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
